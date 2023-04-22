@@ -1,0 +1,268 @@
+html {
+    font-family: 'Noto Serif Hebrew', serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #efefefaa;
+}
+
+/* header */
+
+header {
+    display: flex;
+    background-color: rgb(52, 96, 98);
+    padding: 10px 15px;
+    min-width: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+.log {
+    display: flex;
+    align-items: center;
+}
+
+.log img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.atajo a {
+    transition: text-shadow 0.3s ease;
+    font-weight: 600;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.atajo a:hover {
+    color: aquamarine;
+    text-shadow: 2px 5px 6.5px rgba(0,0,0,8);
+}
+
+@media (max-width: 900px) {
+    header{
+        flex-direction: column;
+    }
+    nav {
+        padding: 10px 0px;
+    }
+}
+
+/* Muro total */
+
+#columnas {
+    display: grid;
+    justify-content: flex-start;
+    grid-template-columns: 20% 50%;
+    padding: 10px 0;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.caja-ti, .caja-ob, .caja-lo, .caja-mi, .caja-vi, .caja-va, .caja-da  {
+    transition: box-shadow 0.4s ease;
+    background-color: white;
+    border-radius: 8px;
+    padding: 4px 0px;
+    margin: 10px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Barra de links */
+
+section div nav ul li a {
+    text-decoration: none; 
+}
+
+.links nav {
+    text-decoration: none;
+    transition: link 0.3s ease;
+    float: left;
+    width: 200px;
+    display: flex;
+}
+
+/* Contenedor de los cuadros de texto */
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(350px, 100%, 1fr);
+}
+
+section article h1, section article h2, section article h3, section article p {
+    margin: 16px;
+}
+
+section article:hover {
+    box-shadow: 2px 5px 6.5px rgba(0,0,0,0.5);
+}
+
+/* imagenes en total */
+
+img {
+    width: 600px;
+}
+
+/* titulo */
+
+.container .caja-ti h1 {
+    font-size: 1.8rem;
+}
+
+/* logotipo y eslogan */
+
+.caja-lo article div img {
+    width: 350px;
+}
+
+/* Objetivos */
+
+#objetivo {
+    text-align: left;
+}
+
+.ti-obj {
+    text-align: center;
+}
+
+/* Mision */
+
+.mision-total {
+    display: grid;
+    gap: 35px;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.mision-total #centrar {
+    grid-column: span 2;
+    padding: 0;
+    margin: 0;
+    
+} 
+
+.mision-total .imagen div img, .mision-total .imagen3 img {
+    width: 250px;
+}
+
+/* vision */
+
+.caja-vi img {
+    width: 450px;
+}
+
+/* valores */
+
+.contenedor-valores {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    text-align: center;
+    padding: 0px 5px;
+    margin: 2px;
+    gap: 20px;
+}
+
+.contenedor-valores img {
+    transition: box-shadow 0.3s ease;
+    width: 250px;
+    border-radius: 70%;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, rgb(78, 77, 77), rgb(255, 255, 255));
+}
+
+.contenedor-valores img:hover {
+    box-shadow: 2px 5px 6.5px rgba(0, 0, 0, 0.8);
+}
+
+/* DOFA */
+
+.contenedor-dofa {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    text-align: left;
+    gap: 20px;
+}
+
+.d1 {
+    transition: box-shadow 0.3s ease;
+    background-image: linear-gradient(45deg, rgb(78, 77, 77), rgb(255, 255, 255));
+    padding: 10px 10px;
+    margin: 10px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.d2 {
+    transition: box-shadow 0.3s ease;
+    background-image: linear-gradient(45deg, rgb(78, 77, 77), rgb(255, 255, 255));
+    padding: 10px 10px;
+    margin: 10px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.d3 {
+    transition: box-shadow 0.3s ease;
+    background-image: linear-gradient(45deg, rgb(78, 77, 77), rgb(255, 255, 255));
+    padding: 10px 10px;
+    margin: 10px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.d4 {
+    transition: box-shadow 0.3s ease;
+    background-image: linear-gradient(45deg, rgb(78, 77, 77), rgb(255, 255, 255));
+    padding: 10px 10px;
+    margin: 10px 15px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+}
+
+.d1:hover, .d2:hover, .d3:hover, .d4:hover   {
+    box-shadow: 2px 5px 6.5px rgba(0,0,0,0.8);
+}
+
+/* Footer */
+
+footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    grid-auto-flow: column;
+    background-color: #1b3132;
+    padding: 40px;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: text-shadow 0.3s ease;
+    transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: aquamarine;
+    text-shadow: 2px 5px 6.5px rgba(0,0,0,0.8);
+}
+
